@@ -150,18 +150,18 @@ public class gaussSeidelMethod {
         String ErrorValues="";
         for (int i=1; i<=this.n;  i++){
         if(ea[i]<=this.es){
-            ErrorValues+="Error1:"+ea[i]+"\n";
+            ErrorValues+="Error["+i+"]"+ea[i]+"\n";
         passError=passError+1;
         }
         }
         if(passError==this.n){
-            bufferString+= "\n\n Final Error Values:";
+            bufferString+= "\n\n Final Error Values:\n";
             bufferString+=ErrorValues;
         sentinel=false;
         }    
         
         if(!sentinel||iter>=this.imax){
-           bufferString+="Total number of iterations: "+iter+"\n";
+           bufferString+="\nTotal number of iterations: "+iter+"\n";
            setOutputText(bufferString);
            break;
         }
