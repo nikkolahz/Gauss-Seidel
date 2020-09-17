@@ -1174,6 +1174,11 @@ public class GUI extends javax.swing.JFrame {
         textField_4X4_a42.setText("");
         textField_4X4_a43.setText("");
         textField_4X4_a44.setText("");
+        
+        textField_4X4_b1.setText("");
+        textField_4X4_b2.setText("");
+        textField_4X4_b3.setText("");
+        textField_4X4_b4.setText("");
     }
 
     }   
