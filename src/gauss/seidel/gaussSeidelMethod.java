@@ -142,8 +142,7 @@ public class gaussSeidelMethod {
             if(sentinel&&this.x[i]!=0){
             ea[i] = Math.abs((this.x[i]-old)*100/this.x[i]);
             ea[i] = Math.round(ea[i]*100000.0)/100000.0;
-            bufferString+="  Error"+i+":"+ea[i];
-
+           
             }
             
         }
