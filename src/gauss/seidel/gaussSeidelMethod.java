@@ -150,6 +150,7 @@ public class gaussSeidelMethod {
         String ErrorValues="";
         for (int i=1; i<=this.n;  i++){
         if(ea[i]<=this.es){
+            ErrorValues+="Error1:"+ea[i]+"\n";
         passError=passError+1;
         }
         }
